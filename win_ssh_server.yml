@@ -2,6 +2,6 @@
   vars_files:
    - ./ssh_var.yml
   roles:
-    #- win_package_install
+    - win_package_install
     - win_service_config
-    #- win_firewall
+    - win_firewall
