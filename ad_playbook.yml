@@ -1,0 +1,7 @@
+- name: run windows ad
+  hosts: windows #refer to your hosts file /etc/ansible/hosts 
+  gather_facts: false # remove later! speeds up testing
+  become: true
+  roles:
+    - { role: "./roles/win_ad_install" }
+
